@@ -5,6 +5,17 @@ body::before {
     background-attachment: scroll;
 }
 
+.a4-container {
+    background: rgb(240, 240, 240);
+    width: 210mm;
+    height: 230mm;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Valge lehe välisäär */
+    border-radius: 8px; /* Nürid nurgad */
+    overflow: hidden; /* Slideriteta */
+    box-sizing: border-box; /* Padding suuruse sees */
+  }
+
 body {
     background: url('https://images.unsplash.com/photo-1617957772002-57adde1156fa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
@@ -21,13 +32,42 @@ body {
 a {margin-right: 20px}
 h2 {margin-top: 100px}
 
+h1, div {
+    text-align: center;
+}
 h1, h2, p {
     position: relative;
-    width: 750px;
-    height: 50px;
     padding: 5px;
-    border: 3px solid #dddd;
-    background: #dddddd
+    background: transparent
   }
 
-p {word-wrap: break-word}
+/* Style the buttons */
+.styled-button {
+    background-color: #6200ea; /* Purple background */
+    color: white; /* White text */
+    font-size: 16px; /* Adjust text size */
+    padding: 10px 20px; /* Add spacing inside the button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Round the corners */
+    cursor: pointer; /* Change cursor to pointer */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+  
+/* Hover effect */
+.styled-button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+  
+/* Focus effect */
+.styled-button:focus {
+    outline: 2px solid #bb86fc; /* Add a purple outline on focus */
+    outline-offset: 2px;
+}
+  
+/* Active effect (when clicked) */
+.styled-button:active {
+    background-color: #240090; /* Even darker purple when clicked */
+    transform: scale(0.95); /* Slightly shrink the button */
+}
