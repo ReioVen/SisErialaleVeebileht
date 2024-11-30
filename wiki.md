@@ -1,3 +1,3 @@
-### Veebilehe projekti tiimiliikmed on **Reio Vendelin**, **Mirko Sirila**, **Indrek Nemvalts**.
+## Veebilehe projekti tiimiliikmed on **Reio Vendelin**, **Mirko Sirila**, **Indrek Nemvalts**.
 
-Plaanis otsustatud käitumisnormid jäävad samaks, sest on meile kindlad.
+### Plaanis otsustatud käitumisnormid jäävad samaks, sest on meile kindlad.
