@@ -16,6 +16,11 @@ body {
     font-style: normal;
 }
 
+/*Tume režiim*/
+body.dark-mode {
+    background: #121212
+}
+
 /* VALGE LEHT */
 .a4-container {
     background: rgb(235, 235, 235);
@@ -31,6 +36,11 @@ body {
     box-sizing: border-box;
   }
 
+  .a4-container.dark-mode {
+    background: rgb(30, 30, 30); /* Tumeda režiimi taust */
+    color: white; /* Teksti värv */
+}
+
 .pealdis {
     display: flex;
     align-items: center;
@@ -40,10 +50,14 @@ body {
 
 h1 {
     display: flex;
-    font-size: 265%;
-    margin-left: 4%;
+    font-size: 300%;
+    margin-left: 8%;
 }
 
+.nupuasetus {
+    display: flex;
+    gap: 10px;
+}
 
 /* NUPPUDE STIIL */
 .nupud {
