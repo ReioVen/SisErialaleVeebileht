@@ -14,6 +14,12 @@ body {
     
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
+    transition: background-color 0.3s ease;
+}
+
+/*Tume režiim*/
+body.dark-mode {
+    background: #121212
 }
 
 /* VALGE LEHT */
@@ -29,7 +35,12 @@ body {
     border-radius: 8px; /* Ümarad nurgad */
     overflow: hidden; /* Eemaldab alumise slideri */
     box-sizing: border-box;
-  }
+}
+
+.a4-container.dark-mode {
+    background: rgb(30, 30, 30); /* Tumeda režiimi taust */
+    color: white; /* Teksti värv */
+}
 
 .pealdis {
     display: flex;
@@ -41,7 +52,7 @@ body {
 h1 {
     display: flex;
     font-size: 300%;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .nupuasetus {
