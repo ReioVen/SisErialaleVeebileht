@@ -1,21 +1,28 @@
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const body = document.body;
 const container = document.querySelector('.a4-container');
+const nupp = document.querySelector('.tumenupp')
 
 if (localStorage.getItem('darkMode') === 'enabled') {
     body.classList.add('dark-mode');
     container.classList.add('dark-mode');
+    nupp.classList.add('dark-mode');
+    darkModeToggle.innerText = "Hele režiim";
 }
 
 darkModeToggle.addEventListener('click', () => {
     if (body.classList.contains('dark-mode')) {
         body.classList.remove('dark-mode');
         container.classList.remove('dark-mode');
+        nupp.classList.remove('dark-mode');
         localStorage.setItem('darkMode', 'disabled');
+        darkModeToggle.innerText = "Tume režiim";
     } else {
         body.classList.add('dark-mode');
         container.classList.add('dark-mode');
+        nupp.classList.add('dark-mode');
         localStorage.setItem('darkMode', 'enabled');
+        darkModeToggle.innerText = "Hele režiim";
     }
 });
 

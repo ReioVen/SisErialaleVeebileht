@@ -1,98 +1,9 @@
-/* TAUST, ÜLDINE TEKSTI KUJU */
-body {
-    background: url(pildid/taust.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    font-family: "Ubuntu", sans-serif;
-    font-style: normal;
-}
-
-/*Tume režiim*/
-body.dark-mode {
-    background: #121212
-}
-
-/* VALGE LEHT */
-.a4-container {
-    background: rgb(235, 235, 235);
-    width: 40%;
-    min-width: 250mm;
-    height: 90%;
-    min-height: 230mm;
-    padding: 5px;
-    padding-right: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Tume välisäär */
-    border-radius: 8px; /* Ümarad nurgad */
-    overflow: hidden; /* Eemaldab alumise slideri */
-    box-sizing: border-box;
-}
-
-  .a4-container.dark-mode {
-    background: rgb(30, 30, 30); /* Tumeda režiimi taust */
-    color: white; /* Teksti värv */
-}
-
-.pealdis {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Eraldab pealkirja ja nupud */
-    margin-bottom: 50px;
-}
-
 h1 {
     display: flex;
     font-size: 300%;
     margin-left: 25%;
 }
 
-.nupuasetus {
-    display: flex;
-    gap: 10px;
-}
-
-/* NUPPUDE STIIL */
-.nupud {
-    cursor: pointer;
-    background-color: rgb(105, 0, 240);
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px; /* Nupusisene ruum */
-    border: none; /* Eemaldab koleda äärise */
-    border-radius: 8px; /* Ümarad nurgad */
-    transition: background-color 0.3s, transform 0.2s; /* Teeb muutumise sujuvaks */
-}
-  
-/* Hiirega kohapeal olles */
-.nupud:hover {
-    background-color: rgb(50, 0, 165);
-    transform: scale(1.05);
-}
-  
-/* Nupuvajutusel */
-.nupud:focus {
-    outline: 2px solid #bb86fc;
-    outline-offset: 2px;
-}
-  
-/* Pärast nupuvajutust */
-.nupud:active {
-    background-color: rgb(36, 0, 122);
-    transform: scale(0.95);
-}
-
-.sisu {
-    display: flex;
-    padding-left: 20px;
-}
 
 * {box-sizing:border-box}
 

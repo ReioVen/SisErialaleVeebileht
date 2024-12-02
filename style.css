@@ -49,17 +49,17 @@ body.dark-mode {
     margin-bottom: 50px;
 }
 
-h1 {
+.sisu {
     display: flex;
-    font-size: 300%;
-    margin-left: 15%;
+    position: relative;
+    padding-left: 20px;
 }
+
 
 .nupuasetus {
     display: flex;
     gap: 10px;
 }
-
 
 /* NUPPUDE STIIL */
 .nupud {
@@ -91,8 +91,47 @@ h1 {
     transform: scale(0.95);
 }
 
-.sisu {
-    display: flex;
-    position: relative;
-    padding-left: 20px;
+
+/* TUME REŽIIM NUPP */
+.tumenupp {
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px; /* Nupusisene ruum */
+    border: none; /* Eemaldab koleda äärise */
+    border-radius: 8px; /* Ümarad nurgad */
+    transition: background-color 0.3s, transform 0.2s; /* Teeb muutumise sujuvaks */
+}
+
+.tumenupp:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    transform: scale(1.05);
+}
+
+.tumenupp:active {
+    background-color: rgb(0, 0, 0);
+    transform: scale(0.95);
+}
+
+.tumenupp.dark-mode {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 10px 20px; /* Nupusisene ruum */
+    border: none; /* Eemaldab koleda äärise */
+    border-radius: 8px; /* Ümarad nurgad */
+    transition: background-color 0.3s, transform 0.2s; /* Teeb muutumise sujuvaks */
+}
+
+.tumenupp.dark-mode:hover {
+    background-color: rgb(80, 80, 80);
+    transform: scale(1.05);
+}
+
+.tumenupp.dark-mode:active {
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.95);
 }
