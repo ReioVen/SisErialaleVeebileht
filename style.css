@@ -1,6 +1,5 @@
-/* TAUST, ÜLDINE TEKSTI KUJU */
 body {
-    background: url(pildid/taust.jpg);
+    background: url(pildid/taust.jpg); /* TAUST, ÜLDINE TEKSTI KUJU */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
