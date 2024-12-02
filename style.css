@@ -31,7 +31,7 @@ body.dark-mode {
     min-height: 230mm;
     padding: 5px;
     padding-right: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Tume välisäär */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Tume välisäär */
     border-radius: 8px; /* Ümarad nurgad */
     overflow: hidden; /* Eemaldab alumise slideri */
     box-sizing: border-box;
@@ -69,6 +69,7 @@ body.dark-mode {
     font-size: 16px;
     padding: 10px 20px; /* Nupusisene ruum */
     border: none; /* Eemaldab koleda äärise */
+    text-decoration: none; /* Eemaldab joone teksti alt */
     border-radius: 8px; /* Ümarad nurgad */
     transition: background-color 0.3s, transform 0.2s; /* Teeb muutumise sujuvaks */
 }
